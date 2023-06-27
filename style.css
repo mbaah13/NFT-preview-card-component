@@ -1,0 +1,131 @@
+
+
+*{
+ margin: auto; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+}
+
+body{
+    
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Outfit', sans-serif;;
+background: var(--DarkBlue) 
+
+}
+
+.container{
+width: 100%;
+height:70vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: hsl(216, 50%, 16%);
+border-radius: 2rem ;
+
+}
+
+  .contain-wrapper{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ /* height: 100vh; */
+ /* margin-top: 0.5rem; */
+}  
+
+.contain-wrapper img{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ padding: 2rem;
+ border-radius: 3rem;
+}
+ 
+
+ .container-content{
+color: var(--white);
+text-align: center;
+}
+.container-content h2{
+    font-size: 2rem ;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.container-content p{
+    color: var(--GrayishBlue);
+    font-weight: 200;
+    text-align: center;
+    Font-size : 1rem;
+    padding-bottom:1rem
+
+}
+
+.author-info{
+    display: flex;
+    /* margin-bottom: 1rem; */
+
+}
+
+.author-icon span{
+    color:  hsl(178, 100%, 50%);
+}
+
+span{
+    color:var(--GrayishBlue) ;
+}
+
+#line{
+    width: 80%;
+    height: 2px;
+    background-color: var(--GrayishBlue);
+    margin-top: 0.5rem;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: var(--LightGray) }
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+ 
+}
+.profile img{
+    width: 35%;
+}
+
+#name{
+    color: var(--white);
+}
+/* 
+
+#name-of-author{
+ color: white;  
+ margin-left: -1rem
+} 
+
+.creator-info{
+    margin-left: -3rem;
+} */
+
+@media(min-width:600px){
+    .container{
+    width: 25%;
+    height: 50vh;
+    }
+}  
